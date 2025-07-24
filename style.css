@@ -15,9 +15,9 @@
 }
 body {
   margin: 0;
-  background-color: #fefcfb;
   font-family: "Poppins", sans-serif;
 }
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -27,12 +27,18 @@ body {
    Section 1: Navbar and Hero Section
 ========================================================= */
 
+/* s1-color-container */
+#s1-color-container {
+  margin: 0;
+  background-color: #fefcfb;
+}
+
 /* s1-navbar */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 nav div {
   font-family: "Volkhov", serif;
@@ -128,8 +134,8 @@ ul li a {
   background-color: var(--primary-orange);
 }
 #s1-footer {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   width: auto;
   display: flex;
   align-items: center;
@@ -172,3 +178,97 @@ ul li a {
 /* =========================================================
    Section 2: Things you need to do
 ========================================================= */
+
+/* s2-color-container  */
+#s2-color-container {
+  background-color: #f7f8fc;
+}
+
+/* s2-paragraph section */
+#s2-container h1 {
+  margin: 0;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  color: var(--black);
+}
+#s2-container h1 span {
+  color: var(--primary-orange);
+}
+
+#s2-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#s2-container h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 100px;
+}
+#s2-container p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#s2-p1 {
+  margin-bottom: 0;
+}
+#s2-p2 {
+  margin-top: 0;
+}
+
+/* s2-card section */
+#s2-card-container {
+  max-width: 1170px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+padding-bottom: 100px;
+}
+.s2-cards {
+background-color: var(--white);
+  border-radius: 8px;
+  filter: drop-shadow(14px 24px 72px rgba(102, 102, 102, 0.1));
+  padding: 30px;
+}
+#s2-card-1{
+background-image: url(./assets/Vector\ 4856.svg);
+}
+#s2-card-2{
+  background-image: url(./assets/Vector\ 4856\ \(1\).svg);
+}
+#s2-card-3{
+  background-image: url(./assets/Vector\ 4857.svg);
+}
+.s2-cards img {
+padding-top: 10px;
+}
+.s2-cards h2{
+font-weight: 600;
+font-size: 24px;
+line-height: 34px;
+color: var(--black);
+padding-top: 20px;
+}
+.s2-cards h3{
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #666666;
+}
+#flightsvg {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+}
+
