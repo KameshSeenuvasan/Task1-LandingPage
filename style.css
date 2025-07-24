@@ -1,6 +1,174 @@
-h1{
-    font-size: 2.5em;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
+/* =========================================================
+   Global Styles
+========================================================= */
+
+:root {
+  --primary-orange: #fa7436;
+  --login-orange: #fd8d3a;
+  --white: #ffffff;
+  --black: #222222;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #fefcfb;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   Section 1: Navbar and Hero Section
+========================================================= */
+
+/* s1-navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+nav div {
+  font-family: "Volkhov", serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.6%;
+  cursor: default;
+}
+nav div span {
+  margin-left: 10px;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+#navbar-links {
+  gap: 32px;
+}
+ul li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--black);
+  cursor: pointer;
+}
+ul li a {
+  text-decoration: none;
+}
+#navbar-login {
+  color: var(--login-orange);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  right: 60px;
+}
+#navbar-signup {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--white);
+  padding: 12px 35px;
+  background-color: var(--primary-orange);
+  border-radius: 5px;
+}
+#navbar-signup:hover {
+  filter: drop-shadow(0px 8px 16px rgba(250, 116, 54, 0.24));
+}
+
+/* s1-hero */
+#hero-container {
+  display: flex;
+}
+
+/* s1-hero-left */
+#hero-left {
+  min-width: 45%;
+  cursor: default;
+}
+#hero-left h1 {
+  color: var(--black);
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  margin-top: 100px;
+}
+#hero-left h1 span {
+  color: var(--primary-orange);
+}
+#hero-left p {
+  font-size: 20px;
+  color: #666666;
+}
+#hero-left a {
+  color: var(--primary-orange);
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 15px 30px;
+  background-color: var(--white);
+  border: 2px solid var(--primary-orange);
+  margin-top: 30px;
+  display: inline-block;
+}
+#hero-left a:hover {
+  color: var(--white);
+  background-color: var(--primary-orange);
+}
+#s1-footer {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#s1-footer-container {
+  display: flex;
+  gap: 50px;
+  background-color: var(--white);
+  width: fit-content;
+  padding: 25px 25px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
+}
+.s1-dropdown {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--black);
+  cursor: pointer;
+}
+.s1-dropdownsub {
+  font-weight: 400;
+  font-size: 12px;
+  color: #666666;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#explore-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--primary-orange);
+  padding: 14px 25px;
+  border-radius: 5px;
+}
+#explore-btn:hover {
+  filter: drop-shadow(0px 8px 16px rgba(250, 116, 54, 0.16));
+}
+
+/* =========================================================
+   Section 2: Things you need to do
+========================================================= */
