@@ -17,12 +17,13 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
-
 .container {
   max-width: 1170px;
   margin: 0 auto;
 }
-
+h1,h2,h3,p {
+cursor: default;
+}
 /* =========================================================
    Section 1: Navbar and Hero Section
 ========================================================= */
@@ -282,8 +283,8 @@ ul li a {
 }
 #s3 {
   text-align: center;
-   padding-top: 100px;
-   padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 #s3 h1 {
   font-family: Volkhov, serif;
@@ -291,7 +292,7 @@ ul li a {
   font-size: 48px;
   line-height: 54px;
   color: var(--black);
- 
+
   margin: 0;
 }
 #s3 h1 span {
@@ -459,13 +460,145 @@ ul li a {
   justify-content: center;
   align-items: center;
 }
-.s3-btn:hover .s3-btn-circle1{
-fill: #FA7436;
+.s3-btn:hover {
+  cursor: pointer;
 }
-.s3-btn:hover .s3-btn-circle2{
-stroke: none;
+.s3-btn:hover .s3-btn-circle1 {
+  fill: #fa7436;
 }
-.s3-btn:hover .s3-btn-arrow{
+.s3-btn:hover .s3-btn-circle2 {
+  stroke: none;
+}
+.s3-btn:hover .s3-btn-arrow {
   fill: white;
-  fill-opacity: 1; 
+  fill-opacity: 1;
+}
+
+/* =========================================================
+    Section 4: Best vacation plan
+========================================================= */
+
+#s4-color-container {
+  background-color: #fefcfb;
+}
+#s4 {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#s4 h1 {
+  position: relative;
+  font-family: Volkhov, serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  color: var(--black);
+  margin: 0;
+}
+#s4 h1 span {
+  color: var(--primary-orange);
+}
+#s4 p {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: #666666;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+#s4-card-container {
+  max-width: 1170px;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.s4-card{
+  cursor: pointer;
+}
+.s4-card img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+.s4-card-content {
+  position: relative;
+  z-index: 0;
+  top: -25px;
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 30px 20px 20px 20px;
+  border: 2px solid rgba(102, 102, 102, 0.08);
+}
+.s4-card-content div h2 {
+  margin: 0;
+}
+.s4-card-content-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.s4-card-content-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.s4-c1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--black);
+}
+.s4-c2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--primary-orange);
+}
+.s4-c3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+.s4-c4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+.s4-c3::before {
+  content: url(./assets/Navigation.svg);
+  position: relative;
+  top: 2px;
+  padding-right: 13px;
+}
+.s4-c4::before {
+  content: url(./assets/star\ 1.svg);
+  position: relative;
+  top: 2px;
+  padding-right: 10px;
+}
+.s4-card:hover .s4-card-content {
+  background-color: #fefcfb;
+  border: none;
+  border : 2px solid transparent;
+  box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.2);
+}
+#s4 h1 img{
+  position:absolute;
+  top: 0;
+  right: 200px;
+}
+.s4-btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 170px;
+  right: 0;
+  gap: 25px;
 }
