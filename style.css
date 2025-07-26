@@ -684,7 +684,7 @@ ul li a {
     0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0079),
     0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0048);
-    background-color: var(--white);
+  background-color: var(--white);
 }
 #s5-right-card-2 {
   position: absolute;
@@ -702,9 +702,64 @@ ul li a {
 #s5-right-c2a {
   opacity: 50%;
 }
-#s5-right::before{
+#s5-right::before {
   position: absolute;
   content: url(./assets/Element-flight.svg);
   right: -83px;
   top: -100px;
 }
+
+/* =========================================================
+    Section 6: Get update with latest blog
+========================================================= */
+
+#s6-color-container {
+  background-color: #fefcfb;
+}
+.s6 {
+  text-align: center;
+  padding: 100px 0px;
+}
+.s6 h1 {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  color: #000000;
+}
+.s6 h1 span {
+  color: var(--primary-orange);
+}
+.s6-card-container {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.s6-card h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--black);
+}
+.s6-card h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #999999;
+}
+.s6-slider-container {
+  padding-top: 20px;
+  display: flex;
+  gap:15px;
+  align-items: center;
+  justify-content: center;
+}
+.s6-slider:hover {
+  transform: scale(1.5);
+}
+.s6-slider:hover .s6-slider-circle {
+  fill: #fa7436;
+}
+
