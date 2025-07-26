@@ -21,8 +21,11 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
-h1,h2,h3,p {
-cursor: default;
+h1,
+h2,
+h3,
+p {
+  cursor: default;
 }
 /* =========================================================
    Section 1: Navbar and Hero Section
@@ -513,7 +516,7 @@ ul li a {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
-.s4-card{
+.s4-card {
   cursor: pointer;
 }
 .s4-card img {
@@ -585,20 +588,123 @@ ul li a {
 .s4-card:hover .s4-card-content {
   background-color: #fefcfb;
   border: none;
-  border : 2px solid transparent;
+  border: 2px solid transparent;
   box-shadow: 0px 16px 80px 0px rgba(254, 147, 94, 0.2);
 }
-#s4 h1 img{
-  position:absolute;
+#s4 h1 img {
+  position: absolute;
   top: 0;
   right: 200px;
 }
-.s4-btn-container{
+.s4-btn-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   position: absolute;
   top: 170px;
   right: 0;
-  gap: 25px;
+  gap: 30px;
+}
+
+/* =========================================================
+    Section 5: What people say about us.
+========================================================= */
+
+#s5-color-container {
+  background-color: #f7f8fc;
+}
+#s5 {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 170px;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+}
+#s5-left-1 {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  color: var(--black);
+}
+#s5-left-1 span {
+  color: var(--primary-orange);
+}
+#s5-left-2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #666666;
+  padding: 30px 0;
+}
+.s5-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+#s5-right {
+  margin-top: 33px;
+  position: relative;
+}
+.s5-right-card {
+  width: 85%;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+.s5-right-card p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #444444;
+}
+.s5-right-card-content {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.s5-right-c1 {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--black);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.s5-right-c2 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+}
+#s5-right-card-1 {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.0152),
+    0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.0121),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0079),
+    0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0048);
+    background-color: var(--white);
+}
+#s5-right-card-2 {
+  position: absolute;
+  z-index: 0;
+  top: 85px;
+  left: 48px;
+  background-color: ;
+  box-shadow: inset 0 0 0 2px rgba(102, 102, 102, 0.08);
+  filter: drop-shadow(0px 10px 30px rgba(34, 34, 34, 0.35));
+}
+#s5-right-card-2 .s5-right-card-content {
+  margin-bottom: 0px;
+}
+#s5-right-c1a,
+#s5-right-c2a {
+  opacity: 50%;
+}
+#s5-right::before{
+  position: absolute;
+  content: url(./assets/Element-flight.svg);
+  right: -83px;
+  top: -100px;
 }
